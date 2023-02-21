@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/RandomEnemyGenerator.gd" type="Script" id=1]
+[ext_resource path="res://assets/portal.png" type="Texture" id=2]
 
 [node name="RandomEnemyGenerator" type="Node2D"]
 script = ExtResource( 1 )
 numberOfEnemy = 1
-enemySpawnTimer = 0.3
-randomEnemyPosition = Vector2( 10, 100 )
+enemySpawnTimer = 1.0
+randomEnemyPosition = Vector2( 250, 500 )
+
+[node name="Portal" type="Sprite" parent="."]
+scale = Vector2( 1, 2.71891 )
+texture = ExtResource( 2 )
