@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/RandomEnemyGenerator.gd" type="Script" id=1]
+
+[node name="RandomEnemyGenerator" type="Node2D"]
+script = ExtResource( 1 )
+numberOfEnemy = 1
+enemySpawnTimer = 0.3
+randomEnemyPosition = Vector2( 10, 100 )
